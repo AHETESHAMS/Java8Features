@@ -1,0 +1,12 @@
+package com.bridgelabz.java8features;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ForEachLoopDemo {
+	public static void main(String []args)
+	{
+		Map<Integer, String> hashMap = new HashMap<Integer, String>();
+	}
+
+}

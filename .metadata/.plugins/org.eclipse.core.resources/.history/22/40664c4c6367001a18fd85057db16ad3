@@ -1,0 +1,15 @@
+package com.bridgelabz.java8features;
+
+interface A
+{
+	public void show(int i);
+}
+public class LambdaExpressions {
+
+	public static void main(String []args)
+	{
+		A obj = (int i) -> System.out.println("Hello "+i);
+		obj.show(6);
+		
+	}
+}

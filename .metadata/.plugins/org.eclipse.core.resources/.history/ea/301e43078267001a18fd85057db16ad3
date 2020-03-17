@@ -1,0 +1,18 @@
+package com.bridgelabz.java8features;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ForEachLoopDemo {
+	public static void main(String []args)
+	{
+		List<String> fruits = new ArrayList<String>();
+		fruits.add("Apple");
+		fruits.add("Mango");
+		fruits.add("Banana");
+		fruits.add("Orange");
+		
+		 fruits.forEach(str->System.out.println(str));
+	}
+
+}

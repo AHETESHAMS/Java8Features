@@ -1,0 +1,64 @@
+package com.bridgelabz.java8features;
+
+interface A
+{
+	public void show(int i);
+}
+public class LambdaExpressions {
+
+	public static void main(String []args)
+	{
+		A obj = (int i) -> System.out.println("Hello "+i);
+		obj.show(6);
+		
+	}
+}
+
+/*
+What:- Lambda Expression is new Feature of Java 8 provides an
+implementation for an interface having single abstract method called functional interface
+
+Why:- It saves a lot of code as there is no need to implement an interface and write same function again
+
+desc:- 
+
+*Lambda Expressions are nothing but an anonymous function having No Name, No Return Type, No Modifiers as
+ well as no need to provide data types in perimeters as compiler can guess the data type
+
+(i) ->  System.out.println("Hello");
+
+Normal method for Add function:-
+public int add(int a, int b)
+{
+	Stem.out.println(a+b);
+}
+
+Lambda Expression for add function:-
+
+(a, b) -> System.out.println(a+b);
+
+Normal method to return a value:-
+
+public int squareIt(int n)
+{
+	return n*n;
+}
+
+Lambda Expression to return a Value:-
+
+(n) -> return n*n; //also
+
+n -> n*n; // return keyword is optional and if only one argument is there then parentheses are optional
+
+Examples:-
+
+n -> return n*n; ==> invalid
+n -> {return n*n;}; ==> Valid
+n -> {return n*n}; ==> invalid
+n -> {n*n}; ==> invalid
+n -> n*n; ==> Valid
+
+Rules:-
+1) Without curly braces we cannot use return keyword
+2) within curly braces if we want to return some value then we should use return keyword 
+*/

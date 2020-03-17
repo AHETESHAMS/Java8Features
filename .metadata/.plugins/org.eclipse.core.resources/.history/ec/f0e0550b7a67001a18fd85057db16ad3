@@ -1,0 +1,19 @@
+package com.bridgelabz.java8features;
+
+interface A
+{
+	public void show(int i);
+}
+//What:- Lambda Expression is new Feature of Java 8 provides an
+//implementation for an interface having single abstract method called functional interface
+
+//Why:- It saves a lot of code as there is no need to implement an interface and write same function again
+public class LambdaExpressions {
+
+	public static void main(String []args)
+	{
+		A obj = (int i) -> System.out.println("Hello "+i);
+		obj.show(6);
+		
+	}
+}
